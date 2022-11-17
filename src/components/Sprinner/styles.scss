@@ -1,0 +1,81 @@
+.spinner__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.spinner {
+  width: 25rem;
+  height: 20rem;
+  margin: 2rem 1rem 1rem 1rem;
+  border: 1px solid #9DA7B3;
+  
+
+  &__imaWpr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0rem;
+    background-color: #2D333B;
+
+    &__img {
+      height: 150px;
+      width: 150px;
+      background: linear-gradient(-45deg, #000000, #333333, #3b3b3b, #747474);
+      background-size: 400% 400%;
+      animation: gradient 5s ease infinite;
+    }
+  }
+
+  &__content {
+    padding: 1rem;
+    color: #9DA7B3;
+    background-color: #22272E;
+
+    &__title {
+      height: 1.5rem;
+      width: 25%;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(-45deg, #000000, #333333, #3b3b3b, #747474);
+      background-size: 400% 400%;
+      animation: gradient 5s ease infinite;
+      
+      &::before {
+        position: absolute;
+        content: "";
+        height: 1rem;
+        width: 10%;
+        transform: translateY(2rem);
+        background: linear-gradient(-45deg, #000000, #333333, #3b3b3b, #747474);
+        background-size: 400% 400%;
+        animation: gradient 2s ease infinite;
+  
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 1rem;
+        width: 19%;
+        transform: translateY(4rem);
+        background: linear-gradient(-45deg, #000000, #333333, #3b3b3b, #747474);
+        background-size: 400% 400%;
+        animation: gradient 3s ease infinite;
+  
+      }
+    }
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

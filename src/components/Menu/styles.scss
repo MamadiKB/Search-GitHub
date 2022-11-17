@@ -1,0 +1,15 @@
+@use 'src/styles/vars';
+
+nav {
+  margin-bottom: 1rem;
+}
+
+a {
+  margin: 0rem 1rem;
+  font-weight: 700;
+  color: vars.$color-alpha;
+
+  &:hover {
+    color: #646b74;
+  }
+}

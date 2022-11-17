@@ -1,0 +1,25 @@
+@use 'src/styles/vars';
+.faq {
+  margin: 5rem;
+  color: vars.$color-alpha;
+  &__h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    border-bottom: 1px solid vars.$color-alpha;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom: 1px solid vars.$color-alpha;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__p {
+    margin-bottom: 1rem;
+  }
+
+}

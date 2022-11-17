@@ -1,0 +1,16 @@
+@use 'src/styles/vars';
+
+.app {
+  width: 80%;
+  margin: 0em auto;
+  background-color: #22272E;
+  border-left:  1px solid vars.$color-alpha;
+  border-right:  1px solid vars.$color-alpha;
+  min-height: 100vh;
+  padding: 1rem 0rem;
+}
+
+header img {
+  max-width: 200px;
+  max-height: 200px;
+}

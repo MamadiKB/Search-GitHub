@@ -1,0 +1,23 @@
+@use 'src/styles/vars';
+
+.button__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+
+.button {
+  padding: 1rem;
+  background-color: vars.$color-beta;
+  border: 1px solid vars.$color-alpha;
+  border-radius: 0.3rem;
+  color: vars.$color-alpha;
+  font-size: 1.2rem;
+
+  &:hover {
+    background-color: vars.$color-alpha;
+    border: 1px solid vars.$color-beta;
+    color: vars.$color-beta;
+  }
+}

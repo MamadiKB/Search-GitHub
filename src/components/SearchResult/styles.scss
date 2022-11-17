@@ -1,0 +1,63 @@
+@use 'src/styles/vars';
+
+.card__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+.card {
+  width: 25rem;
+  margin: 2rem 1rem 1rem 1rem;
+  border: 1px solid vars.$color-alpha;
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0rem;
+    background-color: vars.$color-charlie;
+
+    & img {
+      max-width: 150px;
+      min-width: 150px;
+    }
+    
+  }
+
+  &__content {
+    padding: 1rem;
+    color: vars.$color-alpha;
+    background-color: vars.$color-beta;
+    &__title {
+      font-weight: 900;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    &__meta {
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    &__description {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+@media screen and ( max-width: 900px) {
+  .card__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .card {
+    width: 20rem;
+    margin: 2rem 1rem 1rem 1rem;
+    border: 1px solid vars.$color-alpha;
+  }
+}

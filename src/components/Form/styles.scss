@@ -1,0 +1,36 @@
+@use 'src/styles/vars';
+
+.field {
+  background-color: vars.$color-charlie;
+  padding: 1rem 0rem;
+}
+
+.input {
+  border: 2px solid vars.$color-alpha;
+  border-radius: 0.2rem;
+  background-color: vars.$color-beta;
+  margin: auto 1rem;
+  width: 15rem;
+  height: 1.8rem;
+  color: vars.$color-alpha;
+
+  &:focus {
+    border-color: #347d39;
+  }
+
+  &__button {
+    height: 1.8rem;
+    width: 4rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #347d39;
+    color: whitesmoke;
+
+    &:hover {
+      background-color: #46954A;
+    }
+  }
+}
+
+
+//background-color: #46954A;

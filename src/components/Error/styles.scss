@@ -1,0 +1,24 @@
+@use 'src/styles/vars';
+
+.lost {
+  text-align: center;
+  color: vars.$color-alpha;
+
+  &__h1 {
+    font-weight: 900;
+    font-size: 5rem;
+    text-transform: uppercase;
+    margin: 2rem;
+  }
+
+  &__p {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.lost img {
+  margin-top: 1rem;
+  max-height: 500px;
+  max-width: 500px;
+}

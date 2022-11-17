@@ -1,0 +1,14 @@
+@use 'src/styles/vars';
+
+.count {
+  color: vars.$color-alpha;
+  padding: 1rem 0 1rem 1rem;
+  border-bottom: 0.1rem solid vars.$color-alpha;
+}
+
+.error {
+  color: vars.$color-alpha;
+  background-color: rgba(255, 0, 0, 0.274);
+  padding: 1rem 0 1rem 1rem;
+  border-bottom: 0.1rem solid vars.$color-alpha;
+}
